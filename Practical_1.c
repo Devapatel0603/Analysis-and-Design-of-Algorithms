@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<time.h>
-int loop(int n){
+
+int looop(int n){
     long sum = 0;
     for(int i=1;i<=n;i++){
         sum = sum + i;
@@ -25,7 +26,7 @@ void main(){
     double tloop,tequation,trecursion;
 
     start = clock();
-    long o = loop(n);
+    long o = looop(n);
     end = clock();
     tloop = ((double)(end-start))/CLOCKS_PER_SEC;
     printf("Sum using Loop : %ld\n",o);
